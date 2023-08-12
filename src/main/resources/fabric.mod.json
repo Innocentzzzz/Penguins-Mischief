@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "pnm",
+	"version": "${version}",
+	"name": "Penguin's Mischief",
+	"description": "If you couldn't tell, this mod is about penguins",
+	"authors": [
+		"Innocentzz"
+	],
+	"contact": {
+		"homepage": "modrinth.com",
+		"sources": ""
+	},
+	"license": "MIT",
+	"icon": "assets/pnm/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.inno.penguinmischief.PenguinsMischiefMod"
+		],
+		"client": [
+			"net.inno.penguinmischief.PenguinsMischiefModClient"
+		],
+		"fabric-datagen": [
+			"net.inno.penguinmischief.PenguinsMischiefModDataGenerator"
+		]
+	},
+	"mixins": [
+		"pnm.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "Geckolib"
+	}
+}
